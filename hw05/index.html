@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -192,17 +192,87 @@
       </table>
     </div>
   </div>
-
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="ComfyUI.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#ff0000;"> 
+      <figure>
+        <figcaption>完成芙莉蓮、欣梅爾Checkpoint文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl">Checkpoint連結</a>
+        <p>832 * 1216</p>
+        <p>
+          Positive:
+          masterpiece, best quality, ultra-detailed, 8k, anime illustration, 2people, 1boy, 1girl
+
+          Close-up, focused shot on the tender and intimate embrace between the two characters, Himmel and Frieren, as they sit and rest together in peaceful repose
+
+          Himmel (left) light blue short hair, bangs, blue eyes, gentle smile, large cream cloak, silver cloak clasp, blue high-collar tunic, white horizontal front clasps, white trim, white pants, black belt, black boots with white bands and is sleeping peacefully with his eyes gently closed in a calm, serene smile, his head leaning and resting softly on Frieren's shoulder and upper arm. He is relaxed and nestled against her. He wears his classic hero's tunic with the distinctive blue-green and white trim and cross pattern, and his white cloak is draped over his shoulders.
+
+          Frieren (right) has long, pale lavender hair pulled into a loose ponytail, her distinct pointed elf ears are prominent, and her signature red drop earring is clearly visible. Her emerald green eyes are open, looking gently ahead with a contemplative yet tender expression. She wears her detailed white mage robe with gold trim, metal buckles, and blue-green collar accents. Her hands are resting at her side, and her form is nestled against Himmel.
+
+          They are seated close together, Frieren's body is slightly turned towards Himmel, and his body is fully leaning against her, creating a quiet, affectionate space. Frieren's knees are slightly drawn up.
+
+          The background is a pure, minimalist clean white void, creating an ethereal space. Delicate, softly-colored (light pinks, yellows, teals, blues) flower petals and leaves are gently floating and scattered around them in a soft flurry. The lighting is soft and even, highlighting their features.
+
+          The style is defined by soft, delicate, and clean line art with transparent, water-colored layer coloring, primarily using teal-blues, whites, and pale skin tones. The overall feeling is one of quiet, affectionate peace and nostalgia.
+        </p>
+        <p>Negative :
+          NO NSFW, worst quality, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, 
+          jpeg artifacts, signature, watermark, username, blurry, bad proportions, extra limbs, disfigured, ugly, gross proportions, malformed limbs, missing arms,
+          missing legs, extra arms, extra legs, mutated hands, fused fingers, too many fingers, long neck, bad face, bad eyes, bad mouth, bad nose, bad ears, bad hair, bad clothing, bad background
+        </p>
+        <img src="1.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+<div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#7030a0;">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成芙莉蓮、欣梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl?modelVersionId=2234052">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1204563/ma1ma1helmes-or-shiiros-styles-or-niji?modelVersionId=1356500">LoRA連結1</a>
+        <br>
+        <a href="https://civitai.com/models/138002/nachoneko-test">LoRA連結2</a>
+        <p>832 * 1216</p>
+        <p>LoRA1 Strength : 0.5</p>
+        <p>LoRA2 Strength : 0.5</p>
+        <p>
+          Positive:
+          masterpiece, best quality, ultra-detailed, 8k, anime illustration, 2people, 1boy, 1girl
+
+          Close-up, focused shot on the tender and intimate embrace between the two characters, Himmel and Frieren, as they sit and rest together in peaceful repose
+
+          Himmel (left) light blue short hair, bangs, blue eyes, gentle smile, large cream cloak, silver cloak clasp, blue high-collar tunic, white horizontal front clasps, white trim, white pants, black belt, black boots with white bands and is sleeping peacefully with his eyes gently closed in a calm, serene smile, his head leaning and resting softly on Frieren's shoulder and upper arm. He is relaxed and nestled against her. He wears his classic hero's tunic with the distinctive blue-green and white trim and cross pattern, and his white cloak is draped over his shoulders.
+
+          Frieren (right) has long, pale lavender hair pulled into a loose ponytail, her distinct pointed elf ears are prominent, and her signature red drop earring is clearly visible. Her emerald green eyes are open, looking gently ahead with a contemplative yet tender expression. She wears her detailed white mage robe with gold trim, metal buckles, and blue-green collar accents. Her hands are resting at her side, and her form is nestled against Himmel.
+
+          They are seated close together, Frieren's body is slightly turned towards Himmel, and his body is fully leaning against her, creating a quiet, affectionate space. Frieren's knees are slightly drawn up.
+
+          The background is a pure, minimalist clean white void, creating an ethereal space. Delicate, softly-colored (light pinks, yellows, teals, blues) flower petals and leaves are gently floating and scattered around them in a soft flurry. The lighting is soft and even, highlighting their features.
+
+          The style is defined by soft, delicate, and clean line art with transparent, water-colored layer coloring, primarily using teal-blues, whites, and pale skin tones. The overall feeling is one of quiet, affectionate peace and nostalgia.
+        </p>
+        <p>Negative :
+          NO NSFW, worst quality, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, 
+          jpeg artifacts, signature, watermark, username, blurry, bad proportions, extra limbs, disfigured, ugly, gross proportions, malformed limbs, missing arms,
+          missing legs, extra arms, extra legs, mutated hands, fused fingers, too many fingers, long neck, bad face, bad eyes, bad mouth, bad nose, bad ears, bad hair, bad clothing, bad background
+        </p>
+        <img src="2.png" width="100%"/>
+      </figure>
+  </div>
 
   <!-- ------------------------------------------------>
 
