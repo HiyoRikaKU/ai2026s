@@ -154,8 +154,11 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       上一份作業做完之後，對 ComfyUI 已經不算陌生了。這次換成文生影片，用的還是助教整理好的 workflow，選了自己喜歡的 model 跟 Lora，流程上沒有太大的障礙。
-      但結果出來的時候，感覺有點微妙。影片是動的，但動得很奇怪。髮絲在抖、背景在融，有個地方的線條像是不確定自己要去哪裡，整體就是一種它在努力但還沒到位的感覺。說難看嗎也不完全是，說好看嗎又很難開口，就只能說——有點獵奇。
-      靜態圖可以靠構圖和細節撐起來，但一旦動起來，所有不自然的地方都會被放大。這才意識到文生圖跟文生影片根本是兩個難度的事。圖是一個瞬間，影片是一段時間。用 AI 騙過一個瞬間還算容易，要騙過連續的時間，目前好像還差一截。
+      但結果出來的時候，感覺有點微妙。影片是動的，但動得很奇怪。髮絲在抖、背景在融，有個地方的線條像是不確定自己要去哪裡，整體就是一種它在努力但還沒到位的感覺。
+      說難看嗎也不完全是，說好看嗎又很難開口，就只能說——有點獵奇。
+      靜態圖可以靠構圖和細節撐起來，但一旦動起來，所有不自然的地方都會被放大。
+      這才意識到文生圖跟文生影片根本是兩個難度的事。圖是一個瞬間，影片是一段時間。用 AI 騙過一個瞬間還算容易，要騙過連續的時間，目前好像還差一截。
+
     </div>
   </div>
 
@@ -171,22 +174,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,13 +200,135 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="0.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="1.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="2.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="3.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="1.gif" width="100%"><br>
+      <td> 使用提示詞:
+         "0" :"spring day, white-haired cat girl, long silver hair, blue eyes, dark ribbon hair accessory, navy cardigan, light blue plaid skirt, cherry blossoms, gentle wind, soft smile",
+
+        "10" :"spring day, white-haired cat girl, long silver hair flowing in wind, blue eyes, cat ears, navy school outfit, plaid skirt, floral background, hair accessories, cute smile",
+
+        "20" :"spring day, white-haired cat girl, long hair, cat ears, blue eyes, dark bow, pastel spring outfit, light breeze, blooming flowers, warm sunlight",
+
+        "30" :"summer day, white-haired cat girl, cat ears, blue eyes, short-sleeved sailor dress, light blue plaid skirt, summer breeze, bright sky, cute expression",
+
+        "40" :"summer day, silver-haired cat girl, long flowing hair, blue eyes, white summer dress, dark ribbon hair clip, soft sunlight, summer flowers",
+
+        "50" :"summer day, white-haired cat girl, cat ears, blue eyes, lightweight outfit, plaid skirt, gentle wind, bright summer atmosphere, kawaii anime style",
+
+        "60" :"fall day, white-haired cat girl, long silver hair, cat ears, oversized dark sweater, plaid skirt, autumn leaves, windy weather, cozy atmosphere",
+
+        "70" :"fall day, silver-haired cat girl, blue eyes, black sweater, warm scarf, long hair blowing in wind, fallen leaves, soft autumn lighting",
+
+        "80" :"fall day, white-haired cat girl, dark cozy outfit, plaid skirt, cat ears, orange autumn background, gentle wind, calm cute expression",
+
+        "90" :"winter, white-haired cat girl, cat ears, blue eyes, thick black down jacket, wool hat, warm gloves, snowflakes, winter atmosphere",
+
+        "100" :"winter, silver-haired cat girl, long hair, cat ears, fluffy winter coat, scarf, gloves, falling snow, cozy cute expression",
+
+        "110" :"winter, white-haired cat girl, blue eyes, dark winter outfit, fluffy jacket, snow covered background, soft lighting, kawaii anime style"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2, low resolution, blurry, bad anatomy, bad hands, extra fingers, deformed face, nsfw)
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="2.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" : "anime cat girl, white-haired girl with long silver hair, blue eyes, cat ears, dark bow hair accessory, black oversized sweater, light blue plaid skirt, sitting at table, plate of spaghetti in front of her, holding fork",
+
+          "10" : "anime cat girl, silver long hair, cat ears, blue eyes, dark navy sweater, plaid skirt, holding fork, looking down at spaghetti, preparing to eat",
+
+          "20" : "anime cat girl, white hair flowing softly, cat ears, blue eyes, twirling spaghetti with fork, pasta spinning, close up, cute focused expression",
+
+          "30" : "anime cat girl, dark sweater, plaid skirt, lifting fork, spaghetti hanging from fork, moving fork toward mouth, gentle cute expression",
+
+          "40" : "anime cat girl, silver-haired, cat ears, opening mouth, eating spaghetti, food action, kawaii anime style",
+
+          "50" : "anime cat girl, long white hair, blue eyes, chewing spaghetti, satisfied expression, holding fork, napkin on table, cozy restaurant atmosphere",
+
+          "60" : "anime cat girl, cat ears, dark outfit, swallowing food, happy satisfied face, enjoying spaghetti dinner, soft lighting",
+  
+          "67" : "anime cat girl, silver-haired cat girl, blue eyes, SIX SEVEN style pasta dinner, cute premium dining atmosphere, elegant eating pose",
+
+          "70" : "anime cat girl, long silver hair, cat ears, holding glass, drinking water, elegant cute pose, black sweater, plaid skirt",
+
+          "80" : "anime cat girl, putting down glass, looking at spaghetti plate, preparing second bite, calm expression, soft anime lighting",
+
+          "90" : "anime cat girl, white-haired, cat ears, twirling spaghetti again with fork, dynamic fork movement, long hair flowing",
+
+          "100" : "anime cat girl, blue eyes, chewing spaghetti, small smile, looking toward camera, cute confident expression",
+
+          "110" : "anime cat girl, silver long hair, cat ears, dark bow accessory, holding fork, sitting back after finishing meal, satisfied smile"
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2, low resolution, blurry, bad anatomy, bad hands, extra fingers, deformed face, nsfw)
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+        "0" : "anime cat girl, white-haired girl with long silver hair, blue eyes, cat ears, dark bow hair accessory, black oversized sweater, light blue plaid skirt, starting running pose, standing on pavement, slow motion",
+
+        "10" : "anime cat girl, silver long hair flowing, cat ears, blue eyes, dark outfit, plaid skirt, jogging forward, gentle movement, pavement background, cute energetic expression",
+
+        "20" : "anime cat girl, white-haired cat girl, blue eyes, running faster, arms moving naturally, side view, long hair flowing behind, dynamic anime motion",
+
+        "30" : "anime cat girl, cat ears, silver hair, sprinting, fast leg movement, dynamic stride, black sweater and plaid skirt moving with motion, energetic pose",
+
+        "40" : "anime cat girl, long silver hair blowing in wind, cat ears, running, body leaning forward, hair movement, dynamic running scene, anime style",
+
+        "50" : "anime cat girl, blue eyes, running, breathing slightly hard, energetic cute face, determined expression, long hair flowing, motion effect",
+
+        "60" : "anime cat girl, white-haired, cat ears, big running stride, long steps, dynamic movement, skirt and hair reacting to speed",
+
+        "67" : "anime cat girl, silver-haired cat girl, SIX SEVEN fast running speed, powerful running motion, strong dynamic pose, cinematic anime action",
+
+        "70" : "anime cat girl, close up face while running, blue eyes, slight sweat, happy smile, silver hair moving, cat ears visible, energetic expression",
+
+        "80" : "anime cat girl, slowing down after running, jogging toward finish line, relaxed expression, long silver hair, soft motion",
+
+        "90" : "anime cat girl, stopping running, walking slowly, catching breath, cat ears, black sweater, plaid skirt, calm cute expression",
+
+        "100" : "anime cat girl, standing still, hands on hips, catching breath, smiling softly, blue eyes, silver hair, after running scene",
+
+        "110" : "anime cat girl, white-haired cat girl, looking at camera, happy smile, cat ears, dark bow accessory, finished running, cute victory pose"
+
+
+        <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2, low resolution, blurry, bad anatomy, bad hands, extra fingers, deformed face, nsfw)
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -254,4 +379,3 @@
 
 </body>
 </html>
-
